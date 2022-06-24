@@ -6,7 +6,7 @@ format:
 	black *.py --line-length 79
 
 lint:
-	# pylint --disable=R,C,broad-except,bare-except,consider-using-f-string *.py
+	pylint --disable=R,C,broad-except,bare-except,consider-using-f-string *.py
 
 test:
 	# python -m pytest -vv test_wiki_summarizer.py

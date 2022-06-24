@@ -1,0 +1,26 @@
+input_features:
+  - name: id
+    type: number
+  - name: name
+    type: number
+  - name: est_diameter_min
+    type: number
+    preprocessing:
+      missing_value_strategy: fill_with_mean
+  - name: est_diameter_max
+    type: number
+    preprocessing:
+      missing_value_strategy: fill_with_mean
+  - name: relative_velocity
+    type: number
+  - name: miss_distance
+    type: number
+  - name: orbiting_body
+    type: category
+  - name: sentry_object
+    type: category
+  - name: absolute_magnitude
+    type: number
+output_features:
+  - name: hazardous
+    type: category
