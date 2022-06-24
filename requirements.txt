@@ -1,5 +1,4 @@
 pytest
 black
 ludwig
-ludwig[ray]
-dask
+pandas

@@ -11,4 +11,7 @@ lint:
 test:
 	# python -m pytest -vv test_run_auto_train.py
 
+train-ludwig:
+	time ludwig train --config config.yaml --dataset data/neo.csv
+
 all: install format lint test
