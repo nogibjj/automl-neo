@@ -2,3 +2,4 @@ pytest
 black
 ludwig
 pandas
+flaml
