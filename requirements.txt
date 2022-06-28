@@ -3,3 +3,4 @@ black
 ludwig
 pandas
 flaml
+pylint
