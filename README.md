@@ -1,3 +1,5 @@
+[![build](https://github.com/shyamal-anadkat/automl-neo/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/shyamal-anadkat/automl-neo/actions/workflows/main.yml)
+
 # Ludwig AutoML
 
 Auto ML solution using [Ludwig](https://ludwig-ai.github.io/ludwig-docs/0.5/index.html),
