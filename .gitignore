@@ -130,3 +130,8 @@ dmypy.json
 
 # IntelliJ files
 .idea/
+
+# Ludwig files
+.lock_preprocessing
+*.hdf5
+*.meta.json

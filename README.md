@@ -1,9 +1,13 @@
 [![build](https://github.com/shyamal-anadkat/automl-neo/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/shyamal-anadkat/automl-neo/actions/workflows/main.yml)
 
-# Ludwig AutoML
+# AutoML NEO (Nearest Earth Objects)
 
-Auto ML solution using [Ludwig](https://ludwig-ai.github.io/ludwig-docs/0.5/index.html),
+Auto ML solution using two open-source frameworks:
+
+1. [Ludwig](https://ludwig-ai.github.io/ludwig-docs/0.5/index.html),
 a declarative deep learning framework that allows users to train, evaluate, and deploy models without the need to write code.
+2. [FLAML](https://github.com/microsoft/FLAML), 
+a lightweight Python library from Microsoft that finds accurate machine learning models automatically, efficiently and economically. It frees users from selecting learners and hyperparameters for each learner.
 
 
 ## Dataset
@@ -19,15 +23,38 @@ Creating virtual environment:
  1. ```python3 -m venv venv```
  2.  (On Unix or MacOS) ```source venv/bin/activate```
 
-Contributing guidelines:
+Then run:
+```bash
+ chmod +x run_automl_flaml.py
+ chmod +x run_automl_ludwig.py
+```
+
+### Contributing guidelines:
 
 Run ```make all``` before pushing code.
 
-## Running from command line
+## Running Ludwig train from command line
 
 ```bash
-ludwig experiment --dataset data/neo.csv --config config.yaml
+make train-ludwig  # this runs ludwig experiment --dataset data/neo.csv --config config.yaml
 ```
+
+## Ludwig AutoML
+
+[Documentation](https://ludwig-ai.github.io/ludwig-docs/0.5/user_guide/automl/)
+
+```bash
+./run_automl_ludwig.py
+```
+
+## FLAML AutoML
+
+[Documentation](https://microsoft.github.io/FLAML/docs/Use-Cases/Task-Oriented-AutoML/)
+
+```bash
+./run_automl_flaml.py
+```
+
 ## Citation
 
 ```
