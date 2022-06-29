@@ -1,0 +1,122 @@
+{
+    "batch_size": 256,
+    "best_eval_metric": 0.8640846014022827,
+    "best_increase_batch_size_eval_metric": Infinity,
+    "best_reduce_learning_rate_eval_metric": Infinity,
+    "epoch": 1,
+    "last_improvement": 0,
+    "last_improvement_steps": 249,
+    "last_increase_batch_size": 0,
+    "last_increase_batch_size_eval_metric_improvement": 0,
+    "last_increase_batch_size_steps": 0,
+    "last_learning_rate_reduction": 0,
+    "last_learning_rate_reduction_steps": 0,
+    "last_reduce_learning_rate_eval_metric_improvement": 0,
+    "learning_rate": 0.02,
+    "num_increases_batch_size": 0,
+    "num_reductions_learning_rate": 0,
+    "steps": 498,
+    "test_metrics": {
+        "combined": {
+            "loss": [
+                [
+                    0,
+                    249,
+                    0.2553080036304891
+                ]
+            ]
+        },
+        "hazardous": {
+            "accuracy": [
+                [
+                    0,
+                    249,
+                    0.8951635360717773
+                ]
+            ],
+            "loss": [
+                [
+                    0,
+                    249,
+                    0.254751056432724
+                ]
+            ],
+            "roc_auc": [
+                [
+                    0,
+                    249,
+                    0.8704236149787903
+                ]
+            ]
+        }
+    },
+    "train_metrics": {
+        "combined": {
+            "loss": [
+                [
+                    0,
+                    249,
+                    0.25042096292600036
+                ]
+            ]
+        },
+        "hazardous": {
+            "accuracy": [
+                [
+                    0,
+                    249,
+                    0.8980592489242554
+                ]
+            ],
+            "loss": [
+                [
+                    0,
+                    249,
+                    0.24986429512500763
+                ]
+            ],
+            "roc_auc": [
+                [
+                    0,
+                    249,
+                    0.8686361312866211
+                ]
+            ]
+        }
+    },
+    "tune_checkpoint_num": 1,
+    "validation_metrics": {
+        "combined": {
+            "loss": [
+                [
+                    0,
+                    249,
+                    0.2584000410279259
+                ]
+            ]
+        },
+        "hazardous": {
+            "accuracy": [
+                [
+                    0,
+                    249,
+                    0.8992059826850891
+                ]
+            ],
+            "loss": [
+                [
+                    0,
+                    249,
+                    0.257843554019928
+                ]
+            ],
+            "roc_auc": [
+                [
+                    0,
+                    249,
+                    0.8640846014022827
+                ]
+            ]
+        }
+    }
+}

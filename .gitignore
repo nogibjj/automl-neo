@@ -135,3 +135,8 @@ dmypy.json
 .lock_preprocessing
 *.hdf5
 *.meta.json
+*.pkl
+*.ckpt
+*.is_checkpoint
+*.tune_metadata
+*.local

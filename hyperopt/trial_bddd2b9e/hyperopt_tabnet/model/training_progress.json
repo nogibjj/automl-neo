@@ -1,0 +1,182 @@
+{
+    "batch_size": 1024,
+    "best_eval_metric": 0.9239571690559387,
+    "best_increase_batch_size_eval_metric": Infinity,
+    "best_reduce_learning_rate_eval_metric": Infinity,
+    "epoch": 2,
+    "last_improvement": 0,
+    "last_improvement_steps": 126,
+    "last_increase_batch_size": 0,
+    "last_increase_batch_size_eval_metric_improvement": 0,
+    "last_increase_batch_size_steps": 0,
+    "last_learning_rate_reduction": 0,
+    "last_learning_rate_reduction_steps": 0,
+    "last_reduce_learning_rate_eval_metric_improvement": 0,
+    "learning_rate": 0.005,
+    "num_increases_batch_size": 0,
+    "num_reductions_learning_rate": 0,
+    "steps": 189,
+    "test_metrics": {
+        "combined": {
+            "loss": [
+                [
+                    0,
+                    63,
+                    0.2557588806957938
+                ],
+                [
+                    1,
+                    126,
+                    0.18818611180176958
+                ]
+            ]
+        },
+        "hazardous": {
+            "accuracy": [
+                [
+                    0,
+                    63,
+                    0.8981415033340454
+                ],
+                [
+                    1,
+                    126,
+                    0.9013952612876892
+                ]
+            ],
+            "loss": [
+                [
+                    0,
+                    63,
+                    0.2550872564315796
+                ],
+                [
+                    1,
+                    126,
+                    0.1875327080488205
+                ]
+            ],
+            "roc_auc": [
+                [
+                    0,
+                    63,
+                    0.832984983921051
+                ],
+                [
+                    1,
+                    126,
+                    0.9218736290931702
+                ]
+            ]
+        }
+    },
+    "train_metrics": {
+        "combined": {
+            "loss": [
+                [
+                    0,
+                    63,
+                    0.24579900514800102
+                ],
+                [
+                    1,
+                    126,
+                    0.1787721262080595
+                ]
+            ]
+        },
+        "hazardous": {
+            "accuracy": [
+                [
+                    0,
+                    63,
+                    0.904360830783844
+                ],
+                [
+                    1,
+                    126,
+                    0.9074879884719849
+                ]
+            ],
+            "loss": [
+                [
+                    0,
+                    63,
+                    0.24512799084186554
+                ],
+                [
+                    1,
+                    126,
+                    0.17811575531959534
+                ]
+            ],
+            "roc_auc": [
+                [
+                    0,
+                    63,
+                    0.8396567106246948
+                ],
+                [
+                    1,
+                    126,
+                    0.9269633293151855
+                ]
+            ]
+        }
+    },
+    "tune_checkpoint_num": 2,
+    "validation_metrics": {
+        "combined": {
+            "loss": [
+                [
+                    0,
+                    63,
+                    0.2508641980821267
+                ],
+                [
+                    1,
+                    126,
+                    0.18304208246991038
+                ]
+            ]
+        },
+        "hazardous": {
+            "accuracy": [
+                [
+                    0,
+                    63,
+                    0.9013012647628784
+                ],
+                [
+                    1,
+                    126,
+                    0.9053815603256226
+                ]
+            ],
+            "loss": [
+                [
+                    0,
+                    63,
+                    0.25019383430480957
+                ],
+                [
+                    1,
+                    126,
+                    0.18238691985607147
+                ]
+            ],
+            "roc_auc": [
+                [
+                    0,
+                    63,
+                    0.8347501754760742
+                ],
+                [
+                    1,
+                    126,
+                    0.9239571690559387
+                ]
+            ]
+        }
+    }
+}

@@ -9,7 +9,6 @@ a declarative deep learning framework that allows users to train, evaluate, and 
 2. [FLAML](https://github.com/microsoft/FLAML), 
 a lightweight Python library from Microsoft that finds accurate machine learning models automatically, efficiently and economically. It frees users from selecting learners and hyperparameters for each learner.
 
-
 ## Dataset
 
 [NASA - Nearest Earth Objects](https://www.kaggle.com/datasets/sameepvani/nasa-nearest-earth-objects?datasetId=2272878&sortBy=voteCount&select=neo.csv)
@@ -41,6 +40,10 @@ make train-ludwig  # this runs ludwig experiment --dataset data/neo.csv --config
 
 ## Ludwig AutoML
 
+Ludwig AutoML takes a dataset, the target column, and a time budget, and returns a trained Ludwig model.
+Ludwig AutoML is currently experimental and is focused on tabular datasets.
+
+
 [Documentation](https://ludwig-ai.github.io/ludwig-docs/0.5/user_guide/automl/)
 
 ```bash
@@ -48,6 +51,9 @@ make train-ludwig  # this runs ludwig experiment --dataset data/neo.csv --config
 ```
 
 ## FLAML AutoML
+
+flaml.AutoML is a class for task-oriented AutoML. It can be used as a scikit-learn style estimator with the standard fit and predict functions. 
+The minimal inputs from users are the training data and the task type.
 
 [Documentation](https://microsoft.github.io/FLAML/docs/Use-Cases/Task-Oriented-AutoML/)
 
@@ -63,5 +69,12 @@ make train-ludwig  # this runs ludwig experiment --dataset data/neo.csv --config
   title = {Ludwig: a type-based declarative deep learning toolbox},
   year = {2019},
   eprint = {arXiv:1909.07930},
+}
+
+@inproceedings{wang2021flaml,
+    title={FLAML: A Fast and Lightweight AutoML Library},
+    author={Chi Wang and Qingyun Wu and Markus Weimer and Erkang Zhu},
+    year={2021},
+    booktitle={MLSys},
 }
 ```

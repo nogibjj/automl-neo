@@ -1,0 +1,50 @@
+{
+    "batch_size": 256,
+    "best_eval_metric": -Infinity,
+    "best_increase_batch_size_eval_metric": Infinity,
+    "best_reduce_learning_rate_eval_metric": Infinity,
+    "epoch": 0,
+    "last_improvement": 0,
+    "last_improvement_steps": 0,
+    "last_increase_batch_size": 0,
+    "last_increase_batch_size_eval_metric_improvement": 0,
+    "last_increase_batch_size_steps": 0,
+    "last_learning_rate_reduction": 0,
+    "last_learning_rate_reduction_steps": 0,
+    "last_reduce_learning_rate_eval_metric_improvement": 0,
+    "learning_rate": 0.01,
+    "num_increases_batch_size": 0,
+    "num_reductions_learning_rate": 0,
+    "steps": 249,
+    "test_metrics": {
+        "combined": {
+            "loss": []
+        },
+        "hazardous": {
+            "accuracy": [],
+            "loss": [],
+            "roc_auc": []
+        }
+    },
+    "train_metrics": {
+        "combined": {
+            "loss": []
+        },
+        "hazardous": {
+            "accuracy": [],
+            "loss": [],
+            "roc_auc": []
+        }
+    },
+    "tune_checkpoint_num": 0,
+    "validation_metrics": {
+        "combined": {
+            "loss": []
+        },
+        "hazardous": {
+            "accuracy": [],
+            "loss": [],
+            "roc_auc": []
+        }
+    }
+}
