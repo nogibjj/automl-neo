@@ -135,6 +135,10 @@ pytest test_data_deepchecks.py
 make test
 ```
 
+<img width="1060" alt="image" src="https://user-images.githubusercontent.com/12115186/177414711-1c948bb7-3f69-4d88-b440-b045e64e3b2e.png">
+
+```
+
 
 ## Citation
 
