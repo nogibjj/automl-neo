@@ -140,3 +140,4 @@ dmypy.json
 *.is_checkpoint
 *.tune_metadata
 *.local
+*.html
