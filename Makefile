@@ -11,6 +11,9 @@ lint:
 train-ludwig:
 	time ludwig train --config config.yaml --dataset data/neo.csv
 
+test:
+	pytest test_data_deepchecks.py
+
 hyperopt-ludwig:
 	time ludwig hyperopt --config config.yaml --dataset data/neo.csv
 

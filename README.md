@@ -50,6 +50,45 @@ Ludwig AutoML is currently experimental and is focused on tabular datasets.
 ./run_automl_ludwig.py
 ```
 
+
+### Results
+
+```json
+            "eval_stats": {
+                "combined": {
+                    "loss": 0.16034649312496185
+                },
+                "hazardous": {
+                    "accuracy": 0.9335024356842041,
+                    "average_precision_macro": 0.6834651266845658,
+                    "average_precision_micro": 0.6834651266845658,
+                    "average_precision_samples": 0.6834651266845658,
+                    "confusion_matrix": [
+                        [
+                            7915,
+                            261
+                        ],
+                        [
+                            342,
+                            550
+                        ]
+                    ],
+                    "loss": 0.16034649312496185,
+                    "overall_stats": {
+                        "avg_f1_score_macro": 0.8046122551263251,
+                        "avg_f1_score_micro": 0.9335024261138067,
+                        "avg_f1_score_weighted": 0.9320848967383845,
+                        "avg_precision_macro": 0.8183778453793344,
+                        "avg_precision_micro": 0.9335024261138067,
+                        "avg_precision_weighted": 0.9335024261138067,
+                        "avg_recall_macro": 0.7923346138320184,
+                        "avg_recall_micro": 0.9335024261138067,
+                        "avg_recall_weighted": 0.9335024261138067,
+                        "kappa_score": 0.6093161036240407,
+                        "token_accuracy": 0.9335024261138067
+                    }
+```
+
 ## FLAML AutoML
 
 flaml.AutoML is a class for task-oriented AutoML. It can be used as a scikit-learn style estimator with the standard fit and predict functions. 
@@ -60,6 +99,42 @@ The minimal inputs from users are the training data and the task type.
 ```bash
 ./run_automl_flaml.py
 ```
+
+### Results
+
+```bash
+[flaml.automl: 07-05 16:11:47] {3342} INFO - retrained model: LGBMClassifier(colsample_bytree=0.3798570169670106,
+               learning_rate=0.298364626315126, max_bin=1023,
+               min_child_samples=8, n_estimators=1208, num_leaves=30,
+               reg_alpha=0.010349130059024369, reg_lambda=0.04926637721736125,
+               verbose=-1)
+[flaml.automl: 07-05 16:11:47] {2636} INFO - fit succeeded
+[flaml.automl: 07-05 16:11:47] {2638} INFO - Time taken to find the best model: 109.54706311225891
+[flaml.automl: 07-05 16:11:47] {2652} WARNING - Time taken to find the best model is 91% of the provided time budget and not all estimators' hyperparameter search converged. Consider increasing the time budget.
+Best ML leaner: lgbm
+Best hyperparmeter config: {'n_estimators': 1208, 'num_leaves': 30, 'min_child_samples': 8, 'learning_rate': 0.298364626315126, 'log_max_bin': 10, 'colsample_bytree': 0.3798570169670106, 'reg_alpha': 0.010349130059024369, 'reg_lambda': 0.04926637721736125, 'FLAML_sample_size': 61314}
+Best accuracy on validation data: 0.9745
+Training duration of best run: 5.355 s
+```
+
+## Deepchecks Data Integrity Check
+
+>Deepchecks is the leading tool for testing and for validating your machine learning models and data, and it enables doing so with minimal effort. Deepchecks accompanies you through various validation and testing needs such as verifying your data’s integrity, inspecting its distributions, 
+> validating data splits, evaluating your model and comparing between different models.
+
+[Docs](https://docs.deepchecks.com/)
+
+As part of this project, we run the Data Integrity Suite composed of various checks such as: 
+Mixed Nulls, Is Single Value, Outlier Sample Detection, etc.
+
+```
+pytest test_data_deepchecks.py
+```
+**OR**
+```bash
+make test
+```
+
 
 ## Citation
 
